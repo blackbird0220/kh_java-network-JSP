@@ -1,0 +1,67 @@
+package sec1;
+
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+import javax.swing.JTextField;
+
+class LoginGUI extends JFrame implements ActionListener {
+	JPanel port_log = new JPanel();
+
+	JLabel port_label1 = new JLabel("유저입력");
+	JTextField port_num1 = new JTextField(20);
+	JLabel port_warn1 = new JLabel("단, 유저명은  ...이어야 함");
+
+	JLabel port_label2 = new JLabel("포트입력");
+	JTextField port_num2 = new JTextField(20);
+	JLabel port_warn2 = new JLabel("단, 포트번호는  0~65536이어야 함");
+
+	JLabel port_label3 = new JLabel("주소입력");
+	JTextField port_num3 = new JTextField(20);
+	JLabel port_warn3 = new JLabel("단, 주소는 ----이어야 함");
+	
+	
+	JButton port_btn = new JButton("접속~!");
+	
+	
+	public LoginGUI () {
+	
+	setTitle("로그인 화면");
+	setLocationRelativeTo(null);
+	setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+	setSize(300,200);
+	setVisible(true);
+	setResizable(false);
+	port_btn.addActionListener(this);
+	port_log.add(port_label1);
+	port_log.add(port_warn1);
+	port_log.add(port_num1);
+	
+	port_log.add(port_label2);
+	port_log.add(port_warn2);
+	port_log.add(port_num2);
+	
+	port_log.add(port_label3);
+	port_log.add(port_warn3);
+	port_log.add(port_num3);
+	port_log.add(port_btn);
+	add(port_log);
+	}
+
+
+	@Override
+	public void actionPerformed(ActionEvent e) {
+		
+	}
+	
+}
+
+public class GUIClient {
+	public static void main(String[] args) {
+		new LoginGUI();
+	}
+}

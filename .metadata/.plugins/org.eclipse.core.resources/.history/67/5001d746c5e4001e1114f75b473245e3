@@ -1,0 +1,26 @@
+package sec3;
+import java.io.BufferedReader;
+//5000개 초과 됐을 때
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.net.ServerSocket;
+import java.net.Socket;
+
+public class MyServer {
+	public static void main(String[] args) {
+		BufferedReader in = null; //통신데이터를 읽는 스트림
+		PrintWriter out = null; //쓰기 스트림
+
+		ServerSocket server = null;
+		Socket socket =null;
+		
+		try {
+			server = new ServerSocket(6000);
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		
+
+	}
+
+}
