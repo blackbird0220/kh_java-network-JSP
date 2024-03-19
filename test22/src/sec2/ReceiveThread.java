@@ -24,7 +24,7 @@ public class ReceiveThread extends Thread {
 			out = new PrintWriter(socket.getOutputStream());
 			list.add(out);
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
+			
 			e.printStackTrace();
 		}
 	}
