@@ -9,13 +9,13 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+
 </head>
 <body>
 	<h2>포함되는 파일</h2>
 	<div>
-	<p>Name : <%=name %></p>
-	<p>Age : <%=age %></p>
+		<p>Name : <%=name %></p>
+		<p>Age : <%=age %></p>
 	</div>
 </body>
 </html>

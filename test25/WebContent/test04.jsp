@@ -9,7 +9,7 @@
 <body>
 	<h2>데이터 전송 비교</h2>
 	<table>
-	<caption><strong> style="font=size:28px">GET/POST 비교</strong></caption>
+		<caption><strong style="font=size:28px">GET/POST 비교</strong></caption>
 		<tbody>
 			<tr>
 				<th>GET</th><th>POST</th>	
@@ -21,6 +21,7 @@
 					<p>?name=value의 형식으로 주소창에 전달됩니다.</p>
 					<p>post 방식에 비해 처리속도는 빠른 편입니다.</p>
 					<p>서블릿에서는 doGet()을 이용합니다.</p>
+					<p>주로 폼(form)태크를 활용</p>
 				</td>
 				<td>
 					<p>get방식에 비해 보안에 더 유리합니다.</p>
